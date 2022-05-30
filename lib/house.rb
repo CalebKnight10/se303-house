@@ -4,10 +4,8 @@ class House
     case num
     when 1
       "This is the house that Jack built.\n"
-    when 2
-      "This is the malt that lay in the house that Jack built.\n"
     else
-      "This is #{phrase(num)}the malt that lay in the house that Jack built.\n"
+      "This is #{phrase(num)}the house that Jack built.\n"
     end
   end
 
@@ -34,6 +32,8 @@ class House
       lyric = "the cat that killed " + phrase(num - 1)
     elsif num == 3
       lyric = "the rat that ate " + phrase(num - 1)
+    elsif num == 2
+      lyric = "the malt that lay in " + phrase(num - 1)
     end
     return lyric
   end
