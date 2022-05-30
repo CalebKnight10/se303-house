@@ -12,10 +12,8 @@ class House
       "This is the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     when 5
       "This is the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
-    when 6
-      "This is the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     else
-      "This is #{phrase(num)}the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+      "This is #{phrase(num)}the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     end
   end
 
@@ -34,6 +32,8 @@ class House
       lyric = "the man all tattered and torn that kissed " + phrase(num - 1)
     elsif num == 7
       lyric = "the maiden all forlorn that milked " + phrase(num - 1)
+    elsif num == 6
+      lyric = "the cow with the crumpled horn that tossed " + phrase(num - 1)
     end
     return lyric
   end
