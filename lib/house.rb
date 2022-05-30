@@ -1,39 +1,38 @@
 class House
 
   def line(num)
-    case num
-    when 1
-      "This is the house that Jack built.\n"
-    else
-      "This is #{phrase(num)}the house that Jack built.\n"
-    end
+      "This is #{phrase(num)}\n"
   end
 
   def phrase(num)
     lyric = ""
-    if num == 12
+
+    case num
+    when 12
       "the horse and the hound and the horn that belonged to "
       lyric = "the horse and the hound and the horn that belonged to " + phrase(num - 1)
-    elsif num == 11
+    when 11
       lyric = "the farmer sowing his corn that kept " + phrase(num - 1)
-    elsif num == 10
+    when 10
       lyric = "the rooster that crowed in the morn that woke " + phrase(num - 1)
-    elsif num == 9
+    when 9
       lyric = "the priest all shaven and shorn that married " + phrase(num - 1)
-    elsif num == 8
+    when 8
       lyric = "the man all tattered and torn that kissed " + phrase(num - 1)
-    elsif num == 7
+    when 7
       lyric = "the maiden all forlorn that milked " + phrase(num - 1)
-    elsif num == 6
+    when 6
       lyric = "the cow with the crumpled horn that tossed " + phrase(num - 1)
-    elsif num == 5
+    when 5
       lyric = "the dog that worried " + phrase(num - 1)
-    elsif num == 4
+    when 4
       lyric = "the cat that killed " + phrase(num - 1)
-    elsif num == 3
+    when 3
       lyric = "the rat that ate " + phrase(num - 1)
-    elsif num == 2
+    when 2
       lyric = "the malt that lay in " + phrase(num - 1)
+    when 1
+      lyric = "the house that Jack built." + phrase(num - 1)
     end
     return lyric
   end
