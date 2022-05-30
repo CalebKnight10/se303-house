@@ -16,10 +16,8 @@ class House
       "This is the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     when 7
       "This is the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
-    when 8
-      "This is the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     else
-      "This is #{phrase(num)}the man all tattered and torn that kissed the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
+      "This is #{phrase(num)}the maiden all forlorn that milked the cow with the crumpled horn that tossed the dog that worried the cat that killed the rat that ate the malt that lay in the house that Jack built.\n"
     end
   end
 
@@ -34,6 +32,8 @@ class House
       lyric = "the rooster that crowed in the morn that woke " + phrase(num - 1)
     elsif num == 9
       lyric = "the priest all shaven and shorn that married " + phrase(num - 1)
+    elsif num == 8
+      lyric = "the man all tattered and torn that kissed " + phrase(num - 1)
     end
     return lyric
   end
