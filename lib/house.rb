@@ -6,10 +6,8 @@ class House
       "This is the house that Jack built.\n"
     when 2
       "This is the malt that lay in the house that Jack built.\n"
-    when 3
-      "This is the rat that ate the malt that lay in the house that Jack built.\n"
     else
-      "This is #{phrase(num)}the rat that ate the malt that lay in the house that Jack built.\n"
+      "This is #{phrase(num)}the malt that lay in the house that Jack built.\n"
     end
   end
 
@@ -34,6 +32,8 @@ class House
       lyric = "the dog that worried " + phrase(num - 1)
     elsif num == 4
       lyric = "the cat that killed " + phrase(num - 1)
+    elsif num == 3
+      lyric = "the rat that ate " + phrase(num - 1)
     end
     return lyric
   end
