@@ -1,15 +1,19 @@
 class House
 
-  @@phrases = []
+  @@phrases = [
+    "the house that Jack built."
+  ]
 
   def line(num)
       "This is #{phrase(num)}\n"
   end
 
   def phrase(num)
+
     lyric = ""
 
     case num
+
     when 12
       "the horse and the hound and the horn that belonged to "
       lyric = "the horse and the hound and the horn that belonged to " + phrase(num - 1)
@@ -34,7 +38,7 @@ class House
     when 2
       lyric = "the malt that lay in " + phrase(num - 1)
     when 1
-      lyric = "the house that Jack built." + phrase(num - 1)
+      lyric = @@phrases[0]
     end
     return lyric
   end
