@@ -19,7 +19,7 @@ class House
     case num
 
     when 12
-      "the horse and the hound and the horn that belonged to "
+      # "the horse and the hound and the horn that belonged to "
       lyric = @@phrases[11] + phrase(num - 1)
     when 11
       lyric = @@phrases[10] + phrase(num - 1)
