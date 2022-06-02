@@ -3,7 +3,8 @@ class House
   @@phrases = [
     "the house that Jack built.", "the malt that lay in ", "the rat that ate ",
     "the cat that killed ", "the dog that worried ", "the cow with the crumpled horn that tossed ",
-    "the maiden all forlorn that milked ", "the man all tattered and torn that kissed "
+    "the maiden all forlorn that milked ", "the man all tattered and torn that kissed ",
+    "the priest all shaven and shorn that married "
   ]
 
   def line(num)
@@ -24,7 +25,7 @@ class House
     when 10
       lyric = "the rooster that crowed in the morn that woke " + phrase(num - 1)
     when 9
-      lyric = "the priest all shaven and shorn that married " + phrase(num - 1)
+      lyric = @@phrases[8] + phrase(num - 1)
     when 8
       lyric = @@phrases[7] + phrase(num - 1)
     when 7
