@@ -1,5 +1,7 @@
 class House
 
+  @@phrases = []
+
   def line(num)
       "This is #{phrase(num)}\n"
   end
@@ -38,6 +40,6 @@ class House
   end
 
   def recite
-    1.upto(12).map{|numb| line(numb)}.join("\n")
+    1.upto(12).map{|num| line(num)}.join("\n")
   end
 end
