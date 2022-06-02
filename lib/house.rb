@@ -2,7 +2,7 @@ class House
 
   @@phrases = [
     "the house that Jack built.", "the malt that lay in ", "the rat that ate ",
-    "the cat that killed "
+    "the cat that killed ", "the dog that worried "
   ]
 
   def line(num)
@@ -31,7 +31,7 @@ class House
     when 6
       lyric = "the cow with the crumpled horn that tossed " + phrase(num - 1)
     when 5
-      lyric = "the dog that worried " + phrase(num - 1)
+      lyric = @@phrases[4] + phrase(num - 1)
     when 4
       lyric = @@phrases[3] + phrase(num - 1)
     when 3
