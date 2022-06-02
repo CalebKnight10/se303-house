@@ -1,7 +1,8 @@
 class House
 
   @@phrases = [
-    "the house that Jack built.", "the malt that lay in ", "the rat that ate "
+    "the house that Jack built.", "the malt that lay in ", "the rat that ate ",
+    "the cat that killed "
   ]
 
   def line(num)
@@ -32,7 +33,7 @@ class House
     when 5
       lyric = "the dog that worried " + phrase(num - 1)
     when 4
-      lyric = "the cat that killed " + phrase(num - 1)
+      lyric = @@phrases[3] + phrase(num - 1)
     when 3
       lyric = @@phrases[2] + phrase(num - 1)
     when 2
