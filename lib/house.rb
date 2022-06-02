@@ -2,7 +2,7 @@ class House
 
   def line(num)
     lyrics = Lyrics.new(num)
-    "This is #{lyrics.phrase}\n"
+    "#{lyrics.intro} #{lyrics.phrase}\n"
   end
 
   def recite
@@ -27,15 +27,15 @@ class Lyrics
   end
 
   def phrase
-
     lyric = ""
-
     for i in num.downto(1) 
       lyric += @@phrases[i-1]
     end
-
     return lyric
+  end
 
+  def intro
+    "This is"
   end
 
 end
