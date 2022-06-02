@@ -5,7 +5,7 @@ class House
     "the cat that killed ", "the dog that worried ", "the cow with the crumpled horn that tossed ",
     "the maiden all forlorn that milked ", "the man all tattered and torn that kissed ",
     "the priest all shaven and shorn that married ", "the rooster that crowed in the morn that woke ",
-    "the farmer sowing his corn that kept "
+    "the farmer sowing his corn that kept ", "the horse and the hound and the horn that belonged to "
   ]
 
   def line(num)
@@ -20,7 +20,7 @@ class House
 
     when 12
       "the horse and the hound and the horn that belonged to "
-      lyric = "the horse and the hound and the horn that belonged to " + phrase(num - 1)
+      lyric = @@phrases[11] + phrase(num - 1)
     when 11
       lyric = @@phrases[10] + phrase(num - 1)
     when 10
