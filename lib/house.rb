@@ -37,5 +37,8 @@ class Lyrics
   def intro
     "This is"
   end
+end
+
+class PirateVerse < House
 
 end
