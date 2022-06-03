@@ -27,11 +27,15 @@ class Lyrics
   ]
 
   @@subject_stuff = [
-    
+    "the house that Jack ", "the malt that ", "the rat that ",
+    "the cat that ", "the dog that ", "the cow with the crumpled horn that ", 
+    "the maiden all forlorn that ", "the man all tattered and torn that ",
+    "the priest all shaven and shorn that ", "the rooster that crowed in the morn that ",
+    "the farmer sowing his corn that ", "the horse and the hound and the horn that "
   ]
 
   @@verbs = [
-
+    
   ]
 
   def initialize(num)
