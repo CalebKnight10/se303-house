@@ -2,7 +2,7 @@ class House
 
   def line(num)
     lyrics = Lyrics.new(num)
-    "#{lyrics.intro} #{lyrics.phrase}\n"
+    "#{lyrics.house_intro} #{lyrics.phrase}\n"
   end
 
   def recite
@@ -34,11 +34,23 @@ class Lyrics
     return lyric
   end
 
-  def intro
+  def house_intro
     "This is"
+  end
+
+  def pirate_intro
+    "Thar be"
   end
 end
 
 class PirateVerse < House
+
+  def line(num)
+    lyrics = Lyrics.new(num)
+    "#{lyrics.pirate_intro} #{lyrics.phrase}\n"
+  end
+  # def recite
+  #   1.upto(12).map{|num| line(num)}.join("\n")
+  # end
 
 end
