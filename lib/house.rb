@@ -35,7 +35,8 @@ class Lyrics
   ]
 
   @@verbs = [
-    
+    "built.", "lay in ", "ate ", "killed ", "worried ", "tossed ", "milked ", "kissed ", "married ",
+    "woke ", "kept ", "belonged to "
   ]
 
   def initialize(num)
