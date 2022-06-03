@@ -49,8 +49,21 @@ class PirateVerse < House
     lyrics = Lyrics.new(num)
     "#{lyrics.pirate_intro} #{lyrics.phrase}\n"
   end
-  # def recite
-  #   1.upto(12).map{|num| line(num)}.join("\n")
-  # end
 
 end
+
+class RandomVerse < House 
+  
+end
+
+
+
+
+
+
+
+
+
+
+
+
