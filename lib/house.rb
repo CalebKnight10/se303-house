@@ -26,6 +26,14 @@ class Lyrics
     "the farmer sowing his corn that kept ", "the horse and the hound and the horn that belonged to "
   ]
 
+  @@subject_stuff = [
+    
+  ]
+
+  @@verbs = [
+
+  ]
+
   def initialize(num)
     @num = num
   end
