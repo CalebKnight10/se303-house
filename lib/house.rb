@@ -1,3 +1,7 @@
+#Caleb Knight
+#SE303
+#House Project Spring 2022
+
 class House
 
   def line(num)
