@@ -60,10 +60,11 @@ class Lyrics
   end
 
   def random_verses
-    @@random = @@phrases.shuffle
+    @@random_subjects = @@subject_stuff.shuffle
+    @@random_verbs = @@verbs.shuffle
     rand_lyrics = ""
     for i in num.downto(1)
-      rand_lyrics += @@random[i-1]
+      rand_lyrics += @@random_verbs[i-1] + @@random_subjects[i-1]
     end
     return rand_lyrics
   end
