@@ -41,6 +41,16 @@ class Lyrics
   def pirate_intro
     "Thar be"
   end
+
+  def random_verses
+    @@random = phrases.shuffle
+    rand_lyrics = ""
+    for i in num.downto(1)
+      rand_lyrics += @@random[i-1]
+    end
+    return rand_lyrics
+  end
+
 end
 
 class PirateVerse < House
@@ -53,7 +63,10 @@ class PirateVerse < House
 end
 
 class RandomVerse < House 
-  
+  def line(num)
+    lyrics = Lyrics.new(num)
+    "#{lyrics.house_intro} #{lyrics.random_verses}"
+  end
 end
 
 
