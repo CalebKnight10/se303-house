@@ -74,7 +74,6 @@ class RandomPirateVerse < House
   def line(num)
     lyrics = Lyrics.new(num)
     "#{lyrics.pirate_intro} #{lyrics.random_verses}"
-
   end
 end
 
